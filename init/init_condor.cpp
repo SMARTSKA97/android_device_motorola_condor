@@ -64,11 +64,11 @@ void vendor_load_properties()
     if (platform != ANDROID_TARGET)
         return;
 
-    property_override("ro.product.model", "Moto E");
+    property_override_dual("ro.product.model","ro.vendor.product.model", "Moto E");
     radio = GetProperty("ro.boot.radio", "");
     if (radio == "0x1") {
         /* xt1021 */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.product.device", "condor_umts");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "condor_umts");
         property_override_dual("ro.build.product", "ro.vendor.build.product", "condor_umts");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "condor_reteu-user 5.1 LPC23.13-34.8 9 release-keys");
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/condor_reteu/condor_umts:5.1/LPC23.13-34.8/9:user/release-keys");

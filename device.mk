@@ -52,5 +52,5 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 PRODUCT_PACKAGES += \
     MotoDoze
 
-# AEX official
-EXTENDED_BUILD_TYPE := OFFICIAL
+# PEX official
+CUSTOM_BUILD_TYPE := OFFICIAL

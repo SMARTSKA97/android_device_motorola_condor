@@ -7,6 +7,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 PRODUCT_NAME := aosp_condor
 PRODUCT_RELEASE_NAME := condor
 PRODUCT_MODEL := Moto E
+IS_GO_VERSION := true
 TARGET_MINIMAL_APPS := true
 TARGET_GAPPS_ARCH := arm
 TARGET_DENSITY := xhdpi

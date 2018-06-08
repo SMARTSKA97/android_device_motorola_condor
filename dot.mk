@@ -1,19 +1,15 @@
 $(call inherit-product, device/motorola/condor/full_condor.mk)
 
-IS_GO_VERSION := true
-TARGET_MINIMAL_APPS := true
-TARGET_GAPPS_ARCH := arm
-TARGET_DENSITY := xhdpi
-TARGET_BOOT_ANIMATION_RES := 720
-
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common DOT OS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := condor
 PRODUCT_NAME := aosp_condor
 PRODUCT_RELEASE_NAME := condor
 PRODUCT_MODEL := Moto E
-
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_BRAND := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Boot animation

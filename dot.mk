@@ -5,7 +5,7 @@ $(call inherit-product, vendor/dot/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := condor
-PRODUCT_NAME := aosp_condor
+PRODUCT_NAME := dot_condor
 PRODUCT_RELEASE_NAME := condor
 PRODUCT_MODEL := Moto E
 PRODUCT_MANUFACTURER := motorola

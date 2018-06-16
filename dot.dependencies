@@ -4,6 +4,14 @@
     "target_path": "device/motorola/msm8610-common"
   },
   {
+    "repository":  "android_kernel_motorola_msm8610",
+    "target_path": "kernel/motorola/msm8610"
+  },
+  {
+    "repository":  "proprietary_vendor_motorola_condor",
+    "target_path": "vendor/motorola"
+  },
+  {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   }
